@@ -1,0 +1,10 @@
+[package]
+name = "nessu"
+version = "0.1.0"
+edition = "2021"
+
+[workspace]
+members = ["crates/*"]
+
+[profile.dev]
+opt-level = 1

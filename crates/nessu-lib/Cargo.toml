@@ -1,0 +1,17 @@
+[package]
+name = "nessu-lib"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+log = "0.4.17"
+rand = "0.8.5"
+enum_dispatch = "0.3.8"
+
+[target.'cfg(target_arch = "wasm32")'.dependencies]
+wasm-bindgen = "0.2.82"
+getrandom = { version = "0.2.7", features = ["js"] }
+
+[features]
+default = []
+logging = []
